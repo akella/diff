@@ -1,0 +1,87 @@
+// Normally mainpage styles
+body
+	background: #18181D
+	min-width: 1200px 
+.controls
+	background: #414349
+	position: fixed
+	bottom: 0
+	left: 0
+	right: 0
+	padding: 17px   
+	border-top: 5px solid #2B2C33  
+	height: 78px - 17px - 17px
+	.logo
+		position: absolute
+		right: 20px 
+		top: 20px 
+		+s(vg)
+		+hide-text
+	.controls__showdiff
+		margin-left: 96px 
+		border: 1px solid #565860 
+		display: inline-block
+		font-weight: 600
+		color: #fff
+		text-transform: uppercase
+		padding: 10px 15px 10px 9px   
+		cursor: pointer
+		position: relative
+		top: -4px 
+		span
+			display: inline-block
+			vertical-align: middle
+		i
+			+s(diff)
+			margin-right: 15px 
+			display: inline-block
+			vertical-align: middle
+	%control
+		vertical-align: middle
+		margin-right: 10px 
+		display: inline-block
+		cursor: pointer
+	@each $s in prev,next,pause,play
+		.controls__#{$s}
+			+s(#{$s})
+			@extend %control
+.detail
+	position: absolute
+	right: 266px 
+	top: 24px 
+	.detail__more,.detail__less
+		display: inline-block
+		font-size: 13px 
+		text-transform: uppercase
+		color: #777C88
+		line-height: 1.1
+		vertical-align: bottom
+		font-weight: 600 
+	.detail__range
+		display: inline-block
+		position: relative
+		vertical-align: baseline
+		margin: 0 4px 
+		+s(fill)
+		.detail__rangefill
+			+s(fill1)
+			position: absolute
+			left: 0
+			top: 0
+		.detail__rangethumb
+			+s(thumb)
+			position: absolute
+			bottom: 100%
+			right: -2px  
+			bottom: -3px 
+			cursor: pointer
+			cursor: move
+		.detail__rangevalue
+			font-size: 24px 
+			position: absolute
+			width: 3em 
+			text-align: center
+			right: -1.5em 
+			top: -33px 
+			color: #777C88 
+			font-weight: 300 
