@@ -15,6 +15,9 @@
 			vertical-align: middle
 			margin-left: 7px 
 			cursor: pointer
+			&.is-disabled
+				opacity: .4
+				cursor: default 
 		.diffrow__zoomminus
 			+s(minus)
 			margin-right: 7px 
@@ -28,6 +31,11 @@
 			top: -2px 
 			strong
 				font-weight: 600 
+	.diffrow__marker
+		position: absolute
+		+s(flag)
+		top: -20px 
+		cursor: pointer
 	.diffrow__hideprecize
 		position: absolute
 		right: 0
@@ -52,6 +60,7 @@
 			vertical-align: middle
 	.diffrow__filmstrip
 		position: relative
+		z-index: 2 
 		&:last-child
 			margin-top: 5px 
 			.diffrow__title
