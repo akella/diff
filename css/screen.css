@@ -54,18 +54,22 @@ body { position: relative; min-height: 500px; min-width: 1200px; }
 .diffrow { margin: 30px 26px 30px 0; position: relative; }
 .diffrow img { display: block; }
 .diffrow .diffrow__zoom { position: absolute; bottom: -18px; right: 0; }
+.is-viewpage .diffrow .diffrow__zoom { bottom: -23px; }
 .diffrow .diffrow__zoom .diffrow__zoomplus, .diffrow .diffrow__zoom .diffrow__zoomminus { background: url('../img/icons-s738e478701.png') 0 -351px no-repeat; width: 11px; height: 11px; display: inline-block; vertical-align: middle; margin-left: 7px; cursor: pointer; }
 .diffrow .diffrow__zoom .diffrow__zoomminus { background: url('../img/icons-s738e478701.png') 0 -397px no-repeat; width: 11px; height: 11px; margin-right: 7px; }
 .diffrow .diffrow__zoom span { text-transform: uppercase; color: #777c88; font-weight: 400; display: inline-block; vertical-align: middle; position: relative; top: -2px; }
 .diffrow .diffrow__zoom span strong { font-weight: 600; }
 .diffrow .diffrow__hideprecize { position: absolute; right: 0; top: -21px; font-weight: 600; font-size: 13px; color: #777c88; text-transform: uppercase; cursor: pointer; }
+.is-viewpage .diffrow .diffrow__hideprecize { top: -25px; }
 .diffrow .diffrow__hideprecize.is-hiddenprecize i { background: url('../img/icons-s738e478701.png') 0 -121px no-repeat; width: 13px; height: 13px; }
 .diffrow .diffrow__hideprecize i { background: url('../img/icons-s738e478701.png') 0 -144px no-repeat; width: 13px; height: 13px; vertical-align: middle; display: inline-block; margin-right: 4px; }
 .diffrow .diffrow__hideprecize span { display: inline-block; vertical-align: middle; }
 .diffrow .diffrow__filmstrip { position: relative; }
 .diffrow .diffrow__filmstrip:last-child { margin-top: 5px; }
 .diffrow .diffrow__filmstrip:last-child .diffrow__title { top: auto; bottom: -18px; }
+.is-viewpage .diffrow .diffrow__filmstrip:last-child .diffrow__title { bottom: -22px; }
 .diffrow .diffrow__title { position: absolute; top: -20px; font-size: 13px; color: #777c88; font-weight: 300; left: 10px; }
+.is-viewpage .diffrow .diffrow__title { top: -24px; }
 .diffrow .diffrow__title strong { font-weight: 600; margin-right: 10px; }
 
 .hilite { position: absolute; bottom: -5px; top: -3px; background: #fa896f; }
