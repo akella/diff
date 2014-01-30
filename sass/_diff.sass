@@ -86,6 +86,10 @@
 	height: 300px
 	width: 534px 
 	margin: 0 auto 
+	position: relative
+	z-index: 10 
+	img
+		width: 100% 
 .uploadvideo
 	background: #000 
 	height: 300px 
@@ -126,4 +130,13 @@
 		font-size: 13px 
 		color: #777C88 
 		line-height: 1 
-	
+.nextframe,.previousframe
+	position: absolute
+	top: 50%
+	margin-top: -50px  
+	right: 20px 
+	cursor: pointer
+	z-index: 1 
+.previousframe
+	left: 20px 
+	right: auto 

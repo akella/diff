@@ -28,7 +28,7 @@ body { position: relative; min-height: 500px; min-width: 1200px; }
 .l-controls { background: #414349; position: absolute; bottom: 0; left: 0; right: 0; border-top: 5px solid #2b2c33; height: 78px; min-width: 1200px; }
 
 .l-flex { position: absolute; top: 0; left: 0; bottom: 0; right: 0; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-flex-flow: column wrap; }
-.l-flex > * { flex: 1; padding: 15px; text-align: center; overflow: auto; }
+.l-flex > * { flex: 1; padding: 15px; text-align: center; overflow: auto; position: relative; }
 .l-flex .l-flexmiddle { flex: 0 0 40px; height: 39px; padding: 0; }
 .is-startpage .l-flex .l-flexmiddle { background: #777c88; height: 16px; flex: 0 0 16px; }
 .is-viewpage .l-flex .l-flexmiddle { flex: 0 0 122px; background: #18181d; }
@@ -74,7 +74,8 @@ body { position: relative; min-height: 500px; min-width: 1200px; }
 .theredthing { position: absolute; top: -30px; bottom: -30px; z-index: 20; width: 5px; border-left: 1px solid #eb212e; cursor: move; }
 .theredthing:hover { background: rgba(235, 33, 46, 0.5); }
 
-.videowrapper { height: 300px; width: 534px; margin: 0 auto; }
+.videowrapper { height: 300px; width: 534px; margin: 0 auto; position: relative; z-index: 10; }
+.videowrapper img { width: 100%; }
 
 .uploadvideo { background: black; height: 300px; width: 100%; text-align: center; line-height: 300px; vertical-align: middle; }
 .uploadvideo .uploadvideo__in { display: inline-block; width: 230px; height: 90px; text-align: left; line-height: 1; position: relative; top: 15px; }
@@ -82,3 +83,7 @@ body { position: relative; min-height: 500px; min-width: 1200px; }
 .uploadvideo .uploadvideo__link i { background: url('../img/icons-s738e478701.png') 0 -290px no-repeat; width: 24px; height: 24px; vertical-align: middle; display: inline-block; margin-right: 12px; }
 .uploadvideo .uploadvideo__link span { display: inline-block; vertical-align: middle; }
 .uploadvideo .uploadvideo__text { font-size: 13px; color: #777c88; line-height: 1; }
+
+.nextframe, .previousframe { position: absolute; top: 50%; margin-top: -50px; right: 20px; cursor: pointer; z-index: 1; }
+
+.previousframe { left: 20px; right: auto; }
