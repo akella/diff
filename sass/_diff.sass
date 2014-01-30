@@ -3,6 +3,29 @@
 	position: relative 
 	img
 		display: block
+	.diffrow__zoom
+		position: absolute
+		bottom: -18px 
+		right: 0 
+		.diffrow__zoomplus,.diffrow__zoomminus
+			+s(plus)
+			display: inline-block
+			vertical-align: middle
+			margin-left: 7px 
+			cursor: pointer
+		.diffrow__zoomminus
+			+s(minus)
+			margin-right: 7px 
+		span
+			text-transform: uppercase
+			color: #777C88
+			font-weight: 400  
+			display: inline-block
+			vertical-align: middle
+			position: relative
+			top: -2px 
+			strong
+				font-weight: 600 
 	.diffrow__hideprecize
 		position: absolute
 		right: 0
@@ -12,6 +35,9 @@
 		color: #777C88
 		text-transform: uppercase 
 		cursor: pointer
+		&.is-hiddenprecize
+			i
+				+s(precize)
 		i
 			+s(hide)
 			vertical-align: middle

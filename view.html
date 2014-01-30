@@ -8,7 +8,7 @@
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
 	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
 </head>
-<body class="is-startpage">
+<body class="is-viewpage">
 
 <!-- begin l-top  -->
 <div class="l-top l-top_transparent">
@@ -26,7 +26,27 @@
 		<!-- end l-flextop -->
 		<!-- begin l-flexmiddle  -->
 		<div class="l-flexmiddle">
-			
+			<!-- begin diffrow  -->
+			<div class="diffrow">
+				<div class="theredthing" style="left:200px"></div>
+				<div class="diffrow__hideprecize is-hiddenprecize"><i></i><span>Show precise timeline</span></div>
+				<div class="diffrow__zoom">
+					<div class="diffrow__zoomminus"></div>
+					<span>zoom <strong>400%</strong></span>
+					<div class="diffrow__zoomplus"></div>
+				</div>
+				<div class="diffrow__filmstrip">
+					<img src="img/filmstrip.png" alt="">
+					<div class="hilite hilite_fill" style="left:60%;width:200px"></div>
+					<div class="diffrow__title"><strong>00:15:23.48</strong>     ThE Lone Ranger Theatrical.mov</div>
+				</div>
+				<div class="diffrow__filmstrip">
+					<img src="img/filmstrip.png" alt="">
+					<div class="hilite hilite_border" style="left:60%;width:200px"></div>
+					<div class="diffrow__title"><strong>00:15:23.48</strong>     ThE Lone Ranger Theatrical.mov</div>
+				</div>
+			</div>
+			<!-- end diffrow -->
 		</div>
 		<!-- end l-flexmiddle -->
 		<!-- begin l-flexbottom  -->
@@ -49,6 +69,23 @@
 <div class="l-controls">
 	<!-- begin controls  -->
 	<div class="controls">
+		<div class="controls__prev"></div>
+		<div class="controls__play"></div>
+		<div class="controls__pause"></div>
+		<div class="controls__next"></div>
+		<div class="controls__showdiff"><i></i><span>Show diffs</span></div>
+
+		<div class="detail">
+			<div class="detail__less">Less<br>detailed</div>
+			<div class="detail__range">
+				<div class="detail__rangefill" style="width:92%">
+					<div class="detail__rangevalue">92%</div>
+					<div class="detail__rangethumb"></div>
+				</div>
+			</div>
+			<div class="detail__more">more<br>detailed</div>
+		</div>
+
 		<div class="logo"></div>
 	</div>
 	<!-- end controls -->
