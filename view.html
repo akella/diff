@@ -7,8 +7,117 @@
 	<meta name="viewport" content="initial-scale=1"/>
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
 	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+	<script src="js/jquery.js"></script>
+	<script src="js/common.js"></script>
 </head>
 <body class="is-viewpage">
+<div class="l-topcontent__toggle js-toggleprojects">Projects <i></i></div>
+<!-- begin l-topcontent  -->
+<div class="l-topcontent">
+
+	<!-- BEGIN  videos-->
+	<div class="videos">
+		<div class="videos__header">
+			<h2>&nbsp;</h2>
+			<!-- <nav>
+				<a href="#" class="videos__uploaded is-active"><i></i>3</a>
+				<a href="#" class="videos__processing is-active"><i></i>5</a>
+				<a href="#" class="videos__ready is-active"><i></i>6</a>
+				<a href="#" class="videos__what"><i></i>+5</a>
+			</nav> -->
+		</div>
+		<a href="#" class="videos__add"><i></i>Add a video</a>
+		<!-- BEGIN  videos__scroll-->
+		<div class="videos__scroll">
+			<!-- BEGIN  video-->
+			<div class="video is-uploading is-active">
+				<div class="video__pic">
+					<img src="img/video.png" alt="">
+				</div>
+				<div class="video__status"><i style="width:50%"></i></div>
+				<h3 class="video__title">Getaway</h3>
+				<div class="video__textstatus"><i></i>80% Uploaded</div>
+			</div>
+			<!-- END video-->
+			<!-- BEGIN  video-->
+			<div class="video is-ready ">
+				<div class="video__pic">
+					<img src="img/video.png" alt="">
+				</div>
+				<div class="video__status"><i style="width:50%"></i></div>
+				<h3 class="video__title">Getaway</h3>
+				<div class="video__textstatus"><i></i>Ready</div>
+			</div>
+			<!-- END video-->
+			
+			<!-- BEGIN  video-->
+			<div class="video is-processing">
+				<div class="video__pic">
+					<img src="img/video.png" alt="">
+				</div>
+				<div class="video__status"><i style="width:50%"></i></div>
+				<h3 class="video__title">Getaway</h3>
+				<div class="video__textstatus"><i></i>Processing</div>
+			</div>
+			<!-- END video-->
+			<!-- BEGIN  video-->
+			<div class="video is-uploading">
+				<div class="video__pic">
+					<img src="img/video.png" alt="">
+				</div>
+				<div class="video__status"><i style="width:50%"></i></div>
+				<h3 class="video__title">Getaway</h3>
+				<div class="video__textstatus"><i></i>80% Uploaded</div>
+			</div>
+			<!-- END video-->
+			<!-- BEGIN  video-->
+			<div class="video is-ready ">
+				<div class="video__pic">
+					<img src="img/video.png" alt="">
+				</div>
+				<div class="video__status"><i style="width:50%"></i></div>
+				<h3 class="video__title">Getaway</h3>
+				<div class="video__textstatus"><i></i>Ready</div>
+			</div>
+			<!-- END video-->
+			
+			<!-- BEGIN  video-->
+			<div class="video is-processing is-active">
+				<div class="video__pic">
+					<img src="img/video.png" alt="">
+				</div>
+				<div class="video__status"><i style="width:50%"></i></div>
+				<h3 class="video__title">Getaway</h3>
+				<div class="video__textstatus"><i></i>Processing</div>
+			</div>
+			<!-- END video-->
+			
+			<!-- BEGIN  video-->
+			<div class="video is-processing">
+				<div class="video__pic">
+					<img src="img/video.png" alt="">
+				</div>
+				<div class="video__status"><i style="width:50%"></i></div>
+				<h3 class="video__title">Getaway</h3>
+				<div class="video__textstatus"><i></i>Processing</div>
+			</div>
+			<!-- END video-->
+			
+			<!-- BEGIN  video-->
+			<div class="video is-button">
+				<div class="video__pic">
+					<i></i>Add a video
+				</div>
+				<div class="video__textstatus">Video is uploaded<br>with degraded quality</div>
+			</div>
+			<!-- END video-->
+		</div>
+		<!-- END videos__scroll-->
+		
+	</div>
+	<!-- END videos-->
+</div>
+<!-- end l-topcontent -->
 
 <!-- begin l-top  -->
 <div class="l-top l-top_transparent">
@@ -24,6 +133,10 @@
 			</div>
 			<div class="videowrapper">
 				<img src="img/frame.jpg" alt="">
+				<div class="videostatus">
+					<div class="videostatus__uploaded"><span>80%</span> video uploaded</div>
+					<div class="videostatus__more"><strong>00:15:23.48</strong>     the Lone Ranger UNRATED.mov</div>
+				</div>
 			</div>
 		</div>
 		<!-- end l-flextop -->
@@ -58,6 +171,10 @@
 		<div class="l-flexbottom">
 			<div class="videowrapper">
 				<img src="img/frame.jpg" alt="">
+				<div class="videostatus">
+					<div class="videostatus__uploaded"><span>100%</span> video uploaded</div>
+					<div class="videostatus__more"><strong>00:15:23.48</strong>     the Lone Ranger UNRATED.mov</div>
+				</div>
 			</div>
 		</div>
 		<!-- end l-flexbottom -->

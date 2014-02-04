@@ -30,7 +30,7 @@ body
 	left: 0
 	bottom: 0
 	right: 0
-	
+	padding-top: 65px 
 	display: -webkit-box
 	display: -moz-box
 	display: -ms-flexbox
@@ -54,3 +54,34 @@ body
 		.is-viewpage &
 			flex: 0 0 122px
 			background: #18181D 
+.l-topcontent
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	z-index: 100    
+	height: 230px - 8px
+	background: #3E4046
+	padding: 8px 15px 0 15px
+	border-bottom: 3px solid #54565D
+	+transform(translate(0,-260px))
+	+transition(all .2s ease-in-out)
+	.is-projectsvisible &
+		+transform(translate(0,0))
+.l-topcontent__toggle
+	position: fixed
+	font-size: 32px
+	font-weight: 100 
+	color: #f0f1f3
+	display: inline-block
+	margin-right: 15px
+	z-index: 200
+	left: 15px   
+	top: 7px 
+	cursor: pointer
+	i
+		+s(arrbot)
+		display: inline-block
+		vertical-align: middle
+		.is-projectsvisible &
+			+s(arrtop)

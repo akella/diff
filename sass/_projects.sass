@@ -1,0 +1,234 @@
+.videos
+	font-size: 0
+	.videos__add
+		position: absolute
+		right: 15px
+		top: 0
+		display: block
+		width: 179px - 15px
+		background: #4D4F54
+		height: 53px
+		line-height: 53px
+		text-align: left
+		padding-left: 15px
+		text-transform: uppercase
+		color: #fff
+		font-weight: 600 
+		font-size: 13px
+		text-decoration: none
+		cursor: pointer
+		&:hover
+			background: lighten(#4d4f54, 5%)
+		i
+			+s(plus)
+			vertical-align: middle
+			display: inline-block
+			margin-right: 13px
+			position: relative
+			top: -2px
+	.videos__scroll
+		overflow: hidden
+		height: 185px
+		padding-top: 8px
+		overflow-y: hidden
+		overflow-x: auto
+		white-space: nowrap
+		padding-left: 4px
+		margin-left: -4px
+		.video
+			margin-bottom: 100px
+			cursor: pointer
+
+.videos__header
+	margin-bottom: 11px
+	h2
+		font-size: 32px
+		font-weight: 100 
+		color: #f0f1f3
+		display: inline-block
+		margin-right: 15px
+	nav
+		display: inline-block
+		font-size: 16px
+		color: #777c89
+		font-weight: 700 
+		font-size: 0
+		a
+			color: #777c89
+			text-decoration: none
+			padding-right: 15px
+			margin-right: 9px
+			font-size: 16px
+			position: relative
+			&.is-active
+				color: #fff
+			&:before
+				content: ' '
+				position: absolute
+				right: 0
+				bottom: 2px
+				border-right: 1px solid #4F525A
+				height: 15px
+			&:last-child
+				&:before
+					display: none
+		i
+			display: inline-block
+			margin-right: 8px
+	.videos__uploaded
+		i
+			+s(uploading)
+		&.is-active
+			i
+				+s(uploadingw)
+	.videos__ready
+		i
+			+s(ready)
+		&.is-active
+			i
+				+s(readyw)
+	.videos__processing
+		i
+			+s(processing)
+			position: relative
+			top: 1px
+		&.is-active
+			i
+				+s(processing)
+	.videos__fit
+		i
+			+s(videofit)
+	.videos__nofit
+		i
+			+s(videonofit)
+			position: relative
+			top: 1px
+
+.bvideo.is-processing + .videos
+	display: none
+
+.bvideo.is-ready + .videos
+	display: none
+
+.video
+	display: inline-block
+	width: 179px
+	vertical-align: top
+	margin-right: 15px
+	font-size: 16px
+	font-weight: 400 
+	margin-bottom: 15px
+	.video__pic
+		position: relative
+		z-index: 2
+		img,canvas
+			display: block
+	.video__status
+		height: 3px
+		background: #777C88
+		position: relative
+		z-index: 2
+		i
+			display: block
+			height: 3px
+			background: #F0F1F3
+	.video__title
+		width: 179px
+		overflow: hidden
+		font-size: 16px
+		color: #a7a8ad
+		font-weight: 400
+		padding-top: 2px
+		position: relative
+		z-index: 2
+	.video__textstatus
+		color: #777c89
+		font-size: 13px
+		text-transform: uppercase
+		position: relative
+		z-index: 2
+		font-weight: 600
+		i
+			display: inline-block
+			margin-right: 3px
+	&.is-uploading
+		.video__textstatus
+			i
+				+s(uploading)
+	&.is-ready
+		.video__status
+			background: #007691
+			i
+				display: none
+		.video__textstatus
+			i
+				+s(ready)
+	&.is-processing
+		.video__status
+			background: #007691
+			i
+				width: 100% !important
+				background: #F0F1F3
+		.video__textstatus
+			i
+				+s(processing)
+				position: relative
+				top: 3px
+	&.is-active
+		position: relative
+		&:before
+			z-index: 1
+			position: absolute
+			left: -4px
+			top: -5px
+			content: ' '
+			+s(videoactive)
+		.video__pic
+			box-shadow: 0 0 4px rgba(black, 0.6)
+		.video__title
+			color: #fff
+		.video__textstatus
+			color: #3e4047
+		&.is-ready
+			.video__textstatus
+				i
+					+s(readyh)
+		&.is-processing
+			.video__textstatus
+				i
+					+s(processingh)
+		&.is-uploading
+			.video__textstatus
+				i
+					+s(uploadingh)
+	.video__remove
+		position: absolute
+		+s(removesmall)
+		right: 0
+		top: 4px
+		cursor: pointer
+	&.is-button
+		width: 179px
+		label
+			cursor: pointer
+		.video__textstatus
+			text-transform: none
+			font-size: 13px
+			color: #777c89
+			white-space: normal
+			padding-top: 5px
+		.video__pic
+			width: 179px
+			height: 110px
+			background: #4D4F54
+			line-height: 110px
+			text-transform: uppercase
+			color: #fff
+			font-weight: 600 
+			text-align: center
+				
+			i
+				+s(plus)
+				vertical-align: middle
+				display: inline-block
+				margin-right: 13px
